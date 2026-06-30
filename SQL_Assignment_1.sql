@@ -9,6 +9,10 @@ CREATE TABLE Books (
     in_stock INT DEFAULT 1
 );
 
+DESC Books;
+
+SELECT * FROM Books;
+
 INSERT INTO Books (title,isbn,price,published_date,in_stock)
 VALUES
 ('Power of Money','ISBN001',450.00,'2021-05-10',5),
@@ -50,6 +54,10 @@ CREATE TABLE Members (
     member_name VARCHAR(100) NOT NULL,
     join_date DATE NOT NULL DEFAULT (CURRENT_DATE)
 );
+
+DESC Members;
+
+SELECT * FROM Members;
 
 SELECT *
 FROM Members
